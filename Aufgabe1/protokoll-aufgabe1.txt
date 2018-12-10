@@ -1,0 +1,63 @@
+ro851rud@g149-lx06:~/z-drive/sypr-uebung/Aufgabe1$ make clean
+rm -f aufgabe1 aufgabe1.o
+ro851rud@g149-lx06:~/z-drive/sypr-uebung/Aufgabe1$ make aufgabe1                                            
+gcc -g -W -Wall -ansi -pedantic    aufgabe1.c   -o aufgabe1
+ro851rud@g149-lx06:~/z-drive/sypr-uebung/Aufgabe1$ ./aufgabe1   
+Adresse: 0x7fff3f06363c, Platzbedarf: 4, Typ: int, Name: i, Wert: 1
+Adresse: 0x7fff3f06363a, Platzbedarf: 2, Typ: short int, Name: si, Wert: 2
+Adresse: 0x7fff3f063630, Platzbedarf: 8, Typ: long int, Name: li, Wert: 3
+Adresse: 0x7fff3f06362c, Platzbedarf: 4, Typ: unsigned int, Name: ui, Wert: 4
+Adresse: 0x7fff3f06362a, Platzbedarf: 2, Typ: unsigned short int, Name: usi, Wert: 5
+Adresse: 0x7fff3f063620, Platzbedarf: 8, Typ: unsigned long int, Name: uli, Wert: 6
+Adresse: 0x7fff3f06361c, Platzbedarf: 4, Typ: float, Name: f, Wert: 1.400000
+Adresse: 0x7fff3f063610, Platzbedarf: 8, Typ: double, Name: d, Wert: 2.340000
+Adresse: 0x7fff3f063600, Platzbedarf: 16, Typ: long double, Name: ld, Wert: 3.450000e+00
+Adresse: 0x7fff3f0635ff, Platzbedarf: 1, Typ: char, Name: c, Wert: a
+Adresse: 0x7fff3f0635fe, Platzbedarf: 1, Typ: singned char, Name: sc, Wert: -1
+Adresse: 0x7fff3f0635fd, Platzbedarf: 1, Typ: unsigned char, Name: uc, Wert: 255
+Adresse: 0x7fff3f0635f0, Platzbedarf: 8, Typ: char*, Name: s, Wert: 0x4008b8
+LP64-Datenmodell
+ro851rud@g149-lx06:~/z-drive/sypr-uebung/Aufgabe1$ ./aufgabe1 | sort
+Adresse: 0x7fffce1a0230, Platzbedarf: 8, Typ: char*, Name: s, Wert: 0x4008b8
+Adresse: 0x7fffce1a023d, Platzbedarf: 1, Typ: unsigned char, Name: uc, Wert: 255
+Adresse: 0x7fffce1a023e, Platzbedarf: 1, Typ: singned char, Name: sc, Wert: -1
+Adresse: 0x7fffce1a023f, Platzbedarf: 1, Typ: char, Name: c, Wert: a
+Adresse: 0x7fffce1a0240, Platzbedarf: 16, Typ: long double, Name: ld, Wert: 3.450000e+00
+Adresse: 0x7fffce1a0250, Platzbedarf: 8, Typ: double, Name: d, Wert: 2.340000
+Adresse: 0x7fffce1a025c, Platzbedarf: 4, Typ: float, Name: f, Wert: 1.400000
+Adresse: 0x7fffce1a0260, Platzbedarf: 8, Typ: unsigned long int, Name: uli, Wert: 6
+Adresse: 0x7fffce1a026a, Platzbedarf: 2, Typ: unsigned short int, Name: usi, Wert: 5
+Adresse: 0x7fffce1a026c, Platzbedarf: 4, Typ: unsigned int, Name: ui, Wert: 4
+Adresse: 0x7fffce1a0270, Platzbedarf: 8, Typ: long int, Name: li, Wert: 3
+Adresse: 0x7fffce1a027a, Platzbedarf: 2, Typ: short int, Name: si, Wert: 2
+Adresse: 0x7fffce1a027c, Platzbedarf: 4, Typ: int, Name: i, Wert: 1
+LP64-Datenmodell
+ro851rud@g149-lx06:~/z-drive/sypr-uebung/Aufgabe1$ ./aufgabe1 | sort -r
+LP64-Datenmodell
+Adresse: 0x7ffc0c0d99ec, Platzbedarf: 4, Typ: int, Name: i, Wert: 1
+Adresse: 0x7ffc0c0d99ea, Platzbedarf: 2, Typ: short int, Name: si, Wert: 2
+Adresse: 0x7ffc0c0d99e0, Platzbedarf: 8, Typ: long int, Name: li, Wert: 3
+Adresse: 0x7ffc0c0d99dc, Platzbedarf: 4, Typ: unsigned int, Name: ui, Wert: 4
+Adresse: 0x7ffc0c0d99da, Platzbedarf: 2, Typ: unsigned short int, Name: usi, Wert: 5
+Adresse: 0x7ffc0c0d99d0, Platzbedarf: 8, Typ: unsigned long int, Name: uli, Wert: 6
+Adresse: 0x7ffc0c0d99cc, Platzbedarf: 4, Typ: float, Name: f, Wert: 1.400000
+Adresse: 0x7ffc0c0d99c0, Platzbedarf: 8, Typ: double, Name: d, Wert: 2.340000
+Adresse: 0x7ffc0c0d99b0, Platzbedarf: 16, Typ: long double, Name: ld, Wert: 3.450000e+00
+Adresse: 0x7ffc0c0d99af, Platzbedarf: 1, Typ: char, Name: c, Wert: a
+Adresse: 0x7ffc0c0d99ae, Platzbedarf: 1, Typ: singned char, Name: sc, Wert: -1
+Adresse: 0x7ffc0c0d99ad, Platzbedarf: 1, Typ: unsigned char, Name: uc, Wert: 255
+Adresse: 0x7ffc0c0d99a0, Platzbedarf: 8, Typ: char*, Name: s, Wert: 0x4008b8
+ro851rud@g149-lx06:~/z-drive/sypr-uebung/Aufgabe1$ make CC=g++ clean aufgabe1
+rm -f aufgabe1 aufgabe1.o
+g++ -g -W -Wall -ansi -pedantic    aufgabe1.c   -o aufgabe1
+ro851rud@g149-lx06:~/z-drive/sypr-uebung/Aufgabe1$  /opt/cppcheck/cppcheck --enable=all --std=c89 aufgabe1.c
+Checking aufgabe1.c ...
+(information) Cppcheck cannot find all the include files (use --check-config for details)
+ro851rud@g149-lx06:~/z-drive/sypr-uebung/Aufgabe1$
+
+-Sind die Variablen in der Reihenfolge ihrer Definition im Hauptspeicher abgelegt?
+    - ja
+-Liegen die Variablen direkt hintereinander oder gibt es Lücken?
+    - es gibt Lücken
+-Wie viel Speicher belegen die Variablen insgesamt, also inklusive eventueller Lücken?
+    -0x4c Byte = 76+4 Byte (ohne Luecken 67 Byte)

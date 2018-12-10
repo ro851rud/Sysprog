@@ -1,0 +1,38 @@
+ 
+ro851rud@g149-lx19:~/z-drive/sypr-uebung/Aufgabe2$ time java Bubblesort 1000 < /dev/null > /dev/null
+Fehler: Hauptklasse Bubblesort konnte nicht gefunden oder geladen werden
+
+real    0m0.107s
+user    0m0.096s
+sys     0m0.016s
+ro851rud@g149-lx19:~/z-drive/sypr-uebung/Aufgabe2$ time ./bubblesort 1000 < /dev/null > /dev/null
+
+real    0m0.015s
+user    0m0.000s
+sys     0m0.000s
+ro851rud@g149-lx19:~/z-drive/sypr-uebung/Aufgabe2$ make "CC=gcc -g -O" clean all
+rm -f bubblesort bubblesort.o
+make: *** No rule to make target 'bubblesort', needed by 'all'.  Schluss.
+ro851rud@g149-lx19:~/z-drive/sypr-uebung/Aufgabe2$ time ./bubblesort 1000 < /dev/null > /dev/null
+bash: ./bubblesort: Datei oder Verzeichnis nicht gefunden
+
+real    0m0.002s
+user    0m0.000s
+sys     0m0.000s
+ro851rud@g149-lx19:~/z-drive/sypr-uebung/Aufgabe2$ 
+- Verhält sich das C-Programm bei allen Eingaben wie das Java-Programm?
+    - Nein, mit Strg+D gibt es immer nur eine Random Zahl eine
+- Funktioniert die Fehlerbehandlung bei Speicherreservierung und Einlesen?
+    -kp
+- Meldet valgrind Fehler?
+    -nein
+- Lässt sich Ihr Programm auch mit g++ ohne Fehlermeldungen und Warnungen übersetzen?
+    - ja
+- Meldet /opt/cppcheck/cppcheck --enable=all --std=c89 Probleme?
+    - nein
+- Was liefert die obige Befehlsfolge, wenn Ihr bubblesort richtig sortiert hat?
+    - nichts (keine Konsloenausgabe)
+- Ist das optimierte Programm erkennbar schneller?
+    - ja, ist 0,013s schneller
+- Was hat der Compiler an dem C-Programm optimiert?
+    -Die Einrückungen richtig gemacht.
